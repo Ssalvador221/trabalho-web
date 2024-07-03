@@ -1,16 +1,14 @@
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/home";
 
 function App() {
   return (
-    /*TODO: ROTAS 
-    - Home --- /
-    - /Perfil
-    - /Reservas
-    - /Quartos
-    - /Hospedes
-    - /Financeiro
-    */
-    <p className="text-3xl text-orange-500">Blabla</p>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
